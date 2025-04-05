@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(e) {
+document.addEventListener("DOMContentLoaded", function (e) {
   handleOnClick(6); // initiate medium size map when landed;
 });
 
@@ -86,7 +86,9 @@ function displayMap(map) {
     row.forEach((node, col_idx) => {
       const nodeDiv = document.createElement("div");
       nodeDiv.classList.add("node");
-
+      if (row_idx == map.length - 1 && col_idx == startNodeIdx) {
+        node = "Rest";
+      }
       if (node != "Deadend") {
         // Normal node with value
         nodeDiv.innerText = node;
