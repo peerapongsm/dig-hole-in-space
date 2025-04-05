@@ -98,18 +98,6 @@ function displayMap(map) {
         } else if (node == "Elite") {
           nodeDiv.classList.add("elite-node");
         }
-        // Allow editing the node type on click
-        nodeDiv.addEventListener("click", () => {
-          const newType = prompt(
-            "Enter new node type (Monster, Rest, Treasure, Empty):"
-          );
-          if (nodeTypes.some((nodeType) => nodeType.type === newType)) {
-            nodeDiv.innerText = newType;
-            nodeDiv.classList.remove("dead-end"); // Reset styling for normal nodes
-          } else {
-            alert("Invalid node type!");
-          }
-        });
       } else {
         if (row_idx == 0 && col_idx == startNodeIdx) {
           nodeDiv.innerHTML = "Empty";
