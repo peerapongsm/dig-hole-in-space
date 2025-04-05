@@ -60,10 +60,6 @@ body {
   transition: background-color 0.3s;
 }
 
-.node:hover {
-  background-color: #ddd;
-}
-
 .rest-node {
   background-color: olive;
   color: wheat;
