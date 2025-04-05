@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function(e) {
+  handleOnClick(6); // initiate medium size map when landed;
+});
+
 const nodeTypes = [
   { type: "Rest", probability: 0.1 },
   { type: "Random (?)", probability: 0.1 },
@@ -114,8 +118,7 @@ function displayMap(map) {
   mapDiv.appendChild(insertFinalRow());
 }
 
-// Generate and display the map (Example: 5 rows, max 5 nodes per row)
-const width = 7; // Max nodes per row
-const height = 7; // Number of rows
-const map = generateNodeMap(width, height);
-displayMap(map);
+function handleOnClick(n) {
+  const map = generateNodeMap(n, n);
+  displayMap(map);
+}

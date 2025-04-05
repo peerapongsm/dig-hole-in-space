@@ -38,6 +38,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   width: 100%;
+  color: whitesmoke;
 }
 
 .map-row {
@@ -57,7 +58,6 @@ body {
   background-color: wheat;
   font-size: 14px;
   font-weight: bold;
-  transition: background-color 0.3s;
 }
 
 .rest-node {
@@ -97,4 +97,30 @@ body {
 .node.dead-end {
   border: 2px solid slategray;
   background-color: slategray;
+}
+
+.input-section {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 75px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  color: black;
 }

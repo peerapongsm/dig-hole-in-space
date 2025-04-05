@@ -10,9 +10,14 @@
     <div class="wrapper">
       <div class="title">
         <h1>Node Map Generator</h1>
-        <p>(Refresh to generate)</p>
       </div>
       <div id="map"></div>
+      <div class="input-section" id="input-section">
+        <button class="btn" id="s-btn" type="button" onclick={handleOnClick(4)}>Small</button>
+        <button class="btn" id="m-btn" type="button" onclick={handleOnClick(6)}>Medium</button>
+        <button class="btn" id="l-btn" type="button" onclick={handleOnClick(8)}>Large</button>
+        <button class="btn" id="xl-btn" type="button" onclick={handleOnClick(12)}>X-Large</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
