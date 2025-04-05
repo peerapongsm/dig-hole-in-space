@@ -6,9 +6,9 @@ const nodeTypes = [
   { type: "Rest", probability: 0.1 },
   { type: "Random (?)", probability: 0.1 },
   { type: "Treasure", probability: 0.1 },
-  { type: "Monster", probability: 0.3 },
+  { type: "Monster", probability: 0.2 },
   { type: "Elite", probability: 0.1 },
-  { type: "Empty", probability: 0.1 },
+  { type: "Empty", probability: 0.2 },
   { type: "Deadend", probability: 0.2 },
 ];
 
