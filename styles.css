@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  align-self: center;
+  margin: 24px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000;
+  border-radius: 10px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: slategray;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: steelblue;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.map-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 75px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: wheat;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.node:hover {
+  background-color: #ddd;
+}
+
+.rest-node {
+  background-color: olive;
+  color: wheat;
+}
+
+.random-node {
+  background-color: mediumslateblue;
+}
+
+.treasure-node {
+  background-color: goldenrod;
+}
+
+.monster-node {
+  background-color: orangered;
+  color: wheat;
+}
+
+.elite-node {
+  background-color: maroon;
+  color: wheat;
+}
+
+.node.start-node {
+  background-color: lightgreen;
+  cursor: auto;
+}
+
+.node.final-node {
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  cursor: auto;
+  width: 100%;
+}
+
+.node.start-node-edge,
+.node.dead-end {
+  border: 2px solid slategray;
+  background-color: slategray;
+  cursor: auto;
+}
